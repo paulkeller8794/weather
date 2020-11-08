@@ -1,7 +1,7 @@
-import requests
+
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
-
+import requests
 from .models import City
 from .form import CityForm
 from django.views.generic import (
