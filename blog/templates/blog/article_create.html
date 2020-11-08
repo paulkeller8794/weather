@@ -1,12 +1,22 @@
 {% extends 'blog/base_two.html'%}
 
 
-
 #POST : for save
 #GET :  zu einer website wechseln
 
-{% block area_one %}
-<form action = ' ' method='POST'>{% csrf_token%}
+{% block navbar %}
+<br><a href='/blog/'
+       style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;"/> Back</a>
+{% endblock %}
+
+{% block body %}
+<p1 style="color:blue; font-weight: bold; font-size: 2rem;">Create a Blog:</p1>
+<p2></p2><br>
+<p3></p3><br>
+<p4></p4><br>
+<p5></p5><br>
+
+<form action=' ' method='POST'>{% csrf_token%}
     {{form.as_p}}
     <input type='submit' value='Save'/>
 

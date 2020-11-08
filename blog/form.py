@@ -10,8 +10,8 @@ class ArticleForm(forms.ModelForm):
                                           "placeholder": "Your description",
                                           "class": "new-class-name two",
                                           "id": "my-id-for-textarea",
-                                          "rows": 20,
-                                          "columns": 120
+                                          "rows": 30,
+                                          "columns": 400
                                       }
 
                                   ))

@@ -1,18 +1,43 @@
 {% extends 'blog/base_two.html'%}
-{% block area_one %}
-
-<H1 >Wheater-Blog </H1>
+{% block navbar %}
 
 
-
-<p><a href="createArticle" style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;text-align: center;" />Article Creation</a> <a href="http://127.0.0.1:8000/" style="  text-align:center;color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" />Weatherlist</a></p>
-
-<p1>List:</p1>
-
-{% for instance in object_list %}
-<p>{{forloop.counter}} - <a href = '{{ instance.get_absolute_url }}' style="color:black;text-decoration:none;" /> {{instance.title}}</a>
+<p><a href="createArticle"
+      style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;text-align: center;"/>Article
+    Creation</a> <a href="http://127.0.0.1:8000/"
+                    style="  text-align:center;color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;"/>Weatherlist</a>
 </p>
-{% endfor %}
+
+{% endblock %}
+
+
+{% block body %}
+
+<div class="hero-body">
+    <div class="container has-text-north">
+
+        <p1 style="color:blue; font-weight: bold; font-size: 2rem;">Blogs:</p1>
+        <p2></p2>
+        <br>
+        <p3></p3>
+        <br>
+        <p4></p4>
+        <br>
+        <p5></p5>
+        <br>
+        {% for instance in object_list %}
+        <p style="font-size:2rem;color: black;">{{forloop.counter}} - <a href='{{ instance.get_absolute_url }}'
+                                                                         style="color:black;text-decoration:none;font-size: 2rem;"/>
+            {{instance.title}}</a>
+        </p>
+        {% endfor %}
+
+
+    </div>
+</div>
+{% endblock %}
+
+{% block foot %}
 
 
 {% endblock %}

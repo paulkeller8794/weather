@@ -1,10 +1,19 @@
 {% extends 'blog/base_two.html'%}
 
-{% block area_one %}
+{% block navbar %}
 <br><a href = '/blog/' style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" /> Back</a> <a href = 'delete' style="color:black;background-color:red;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" />Delete</a> <a href = 'update' style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" />Update</a> </b>
-
-    <h1>{{object.title}}</h1>
-    <p>{% if object.content != None and object.content != '' %} {{ object.content }} {% else %} Content Coming Soon {% endif %}</p>
-
-
 {% endblock %}
+
+{% block body %}
+    <h1 style="color:blue; font-weight: bold; font-size: 2rem;">{{object.title}}</h1>
+        <p2></p2>
+        <br>
+        <p3></p3>
+        <br>
+        <p4></p4>
+        <br>
+        <p5></p5>
+        <br>
+    <p>{% if object.content != None and object.content != '' %} {{ object.content }} {% else %} Content Coming Soon {% endif %}</p>
+{% endblock %}
+
