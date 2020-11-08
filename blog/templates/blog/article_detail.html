@@ -1,0 +1,10 @@
+{% extends 'blog/base_two.html'%}
+
+{% block area_one %}
+<br><a href = '/blog/' style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" /> Back</a> <a href = 'delete' style="color:black;background-color:red;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" />Delete</a> <a href = 'update' style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" />Update</a> </b>
+
+    <h1>{{object.title}}</h1>
+    <p>{% if object.content != None and object.content != '' %} {{ object.content }} {% else %} Content Coming Soon {% endif %}</p>
+
+
+{% endblock %}

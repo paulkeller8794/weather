@@ -1,0 +1,16 @@
+{% extends 'blog/base_two.html'%}
+
+
+
+#POST : for save
+#GET :  zu einer website wechseln
+
+{% block area_one %}
+<form action = ' ' method='POST'>{% csrf_token%}
+    {{form.as_p}}
+    <input type='submit' value='Save'/>
+
+
+</form>
+
+{% endblock %}

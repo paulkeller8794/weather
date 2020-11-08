@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head bgcolor="white">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     {% block one %}
+    {% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css"/>
+     <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body bgcolor="#FF8C00">
+<section class="hero is-medium is-warning">
+    <div class="hero-body">
+        <div class="container">
+
+            {% block two %}
+            {% endblock %}
+        </div>
+    </div>
+
+</section>
+
+{% block three %}
+{% endblock %}
+<footer class="footer">
+{% block four %}
+{% endblock %}
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+{% extends 'weather/base.html' %}
+{% block one %}
+<title>{{object.name}}</title>
+{% endblock %}
+
+{% block two %}
+
+<h1 class="title">
+    What's the weather in {{object.name}}?
+</h1>
+{% endblock %}
+{% block three %}
+
+
+{% for city_weather in weather_data %}
+{% if object.name == city_weather.city %}
+</section>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-offset-2 is-2">
+                <form method="POST">
+                    {% csrf_token %}
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-offset-4 is-4">
+                {{object_list}}
+
+
+                <div class="box">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-50x50">
+                                <img src="http://openweathermap.org/img/w/{{ city_weather.icon }}.png" alt="Image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <span class="title">{{city_weather.date}}</a></span>
+                                    <br>
+                                     <span class="subtitle">{{ city_weather.city }}</span>
+                                    <br>
+                                    <span class="subtitle">{{ city_weather.temperature }}°</span>
+                                    <br> {{ city_weather.description }}
+
+                                    {% endif %}
+                                    {% endfor %}
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</section>
+<footer class="footer">
+
+    <a href="http://127.0.0.1:8000/" style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" />Weatherlist</a>
+    <br>
+    <a href="http://127.0.0.1:8000/blog" style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;"/>Blog</a>
+
+</footer>
+{% endblock %}
+
+</body>
+
+</html>

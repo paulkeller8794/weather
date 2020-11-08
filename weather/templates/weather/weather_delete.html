@@ -1,0 +1,74 @@
+{% extends 'weather/base.html' %}
+{% block one %}
+<head>
+    <title> {{object.name}}
+    </title>
+</head>
+
+{% endblock %}
+
+{% block two %}
+<h1 class="title" style=" color:red;font-weight:bold;text-decoration:none;">
+    Delete: "{{object.name}}"?
+</h1>
+
+{% endblock %}
+
+{% block three %}
+</section>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-offset-4 is-4">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="field has-addons">
+                        <div class="control is-expanded">
+                            {{ form.name }}
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-offset-4 is-4">
+
+
+                <div class="media-content">
+                    <div class="content">
+                        <form action=' ' method='POST'>{% csrf_token%}
+
+
+                            <h1 class="paul" style=" color:red;font-weight:bold;text-decoration:none;">
+                                Do you want to delete "{{object.name}}"?
+                            </h1>
+                            <p><input type='submit' value='Yes'/>
+                                <button class="btn" name="cancel"/>
+                                <a href='../'>Cancel</a></p>
+
+
+                        </form>
+                    </div>
+                </div>
+                </article>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</section>
+
+
+{% endblock %}
+
+
+{% block four %}
+<a href="http://127.0.0.1:8000/blog"
+   style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;"/>Blog</a>
+{% endblock%}
