@@ -1,0 +1,34 @@
+<application>
+  <component name="GitRememberedInputs">
+    <option name="visitedUrls">
+      <list>
+        <UrlAndUserName>
+          <option name="url" value="git@gitea.sec.tu-bs.de:y0091915/Exercise-00.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://gitea.sec.tu-bs.de/y0091915/Exercise-00" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://gitea.sec.tu-bs.de" />
+          <option name="userName" value="y0091915" />
+        </UrlAndUserName>
+      </list>
+    </option>
+    <option name="cloneParentDir" value="$USER_HOME$/PycharmProjects" />
+  </component>
+  <component name="Vcs.Log.App.Settings">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="1" />
+        <option value="2" />
+        <option value="3" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsApplicationSettings">
+    <option name="COMMIT_FROM_LOCAL_CHANGES" value="true" />
+  </component>
+</application>

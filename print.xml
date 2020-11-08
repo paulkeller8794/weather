@@ -1,0 +1,9 @@
+<application>
+  <component name="PrintSettings">
+    <option name="printScope" value="1" />
+    <option name="COLOR_PRINTING" value="true" />
+    <option name="FONT_NAME" value="JetBrainsMono-Regular" />
+    <option name="FONT_SIZE" value="8" />
+    <option name="FOOTER_HEADER_FONT_SIZE" value="6" />
+  </component>
+</application>
