@@ -42,7 +42,7 @@
                             <div class="content">
                                 <p>
                                     <span class="title"><a
-                                            href="http://127.0.0.1:8000/{{city_weather.id}}/forecast " style="color:black;text-decoration:none;"> {{city_weather.city}}</a></span>
+                                            href="/{{city_weather.id}}/forecast " style="color:black;text-decoration:none;"> {{city_weather.city}}</a></span>
                                     <br>
                                     <span class="subtitle">{{ city_weather.temperature }}°</span>
                                     <br> {{ city_weather.description }}
@@ -62,11 +62,11 @@
 <footer class="footer">
     <a href="forecast" style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" />Forecast[h]</a>
     <br>
-    <a href="http://127.0.0.1:8000/" style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" />Weatherlist</a>
+    <a href="/" style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;" />Weatherlist</a>
     <br>
-    <a href="http://127.0.0.1:8000/{{city_weather.id}}/delete " style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;"/>delete</a>
+    <a href="/{{city_weather.id}}/delete " style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;"/>delete</a>
     <br>
-    <a href="http://127.0.0.1:8000/blog" style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;"/>Blog</a>
+    <a href="/blog" style="color:black;background-color:white;padding:2px 5px 2px 5px;border-radius:4px;font-weight:bold;text-decoration:none;"/>Blog</a>
    
      {% endif %}
     {% endfor %}
