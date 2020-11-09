@@ -1,0 +1,7 @@
+.hd{color:blue; font-weight: bold; font-size: 1rem;}
+.foo{color:#FF8C00; background-color: white; font-weight: bold; font-size: 1rem;}
+.hero.is-success {
+    background-color: slategray;
+    color: #fff;}
+
+.nav{padding: 0rem 0rem;line-height: 1.5;position:relative;}
