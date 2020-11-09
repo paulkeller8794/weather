@@ -3,6 +3,7 @@
     <ignoreFiles list="*$py.class;*.hprof;*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.hg;.svn;CVS;__pycache__;_svn;vssver.scc;vssver2.scc;" />
     <extensionMap>
       <mapping ext="8" type="GitIgnore file" />
+      <mapping pattern="Procfile" type="Native" />
       <mapping pattern="easy_install" type="Native" />
       <mapping pattern="message" type="PLAIN_TEXT" />
       <mapping pattern="pip3" type="PLAIN_TEXT" />
