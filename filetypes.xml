@@ -15,8 +15,8 @@
       <mapping ext="fish" type="PLAIN_TEXT" />
       <mapping ext="tmpl" type="PLAIN_TEXT" />
       <mapping ext="pem" type="PLAIN_TEXT" />
-      <mapping pattern="createKeys" type="Python" />
       <mapping pattern="pip" type="Python" />
+      <mapping pattern="createKeys" type="Python" />
     </extensionMap>
   </component>
 </application>
